@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
         clearError(errorEmail);
     })
 
-    passwordInput.addEventListener('blur', function () {
-        validateEmail();
+    passwordInput.addEventListener('focusout', function () {
+            validatePassword();
     })
     passwordInput.addEventListener('change', function () {
         clearError(errorPassword);
